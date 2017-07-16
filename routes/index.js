@@ -8,7 +8,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/test', function(req, res, next) {
-  res.send('testtest')
+  //res.send('testtest');
+  res.sendfile(__dirname + '/Test.html');
 });
 
 module.exports = router;
